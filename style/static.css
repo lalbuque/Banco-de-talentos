@@ -1,0 +1,158 @@
+/* Esse CSS configura os componetes repetentes nas páginas! */
+/* útima modificação: 29/03/2018 */
+/* HEADER */
+.header-main{
+    width: 100%;
+    height: 10%;
+    background-color: rgb(111, 111, 111);
+}
+
+.content-links-header{
+    height: 100%;
+    width: auto;
+    display: inline-flex;
+}
+.brand-header{
+    height: 100%;
+    padding: 0% 5%;
+    width: auto;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-header{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 12em;
+}
+.link-nav-header{
+    margin: 0;
+    padding: 0 5%;
+    display: flex;
+    list-style-type: none;
+    height: 100%;
+    align-items: center;
+}
+.link-nav-header>li{
+    height: 100%;
+    align-items: center;
+    display: inline-flex;
+    text-align: center;
+    color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 0px 0px 2px 0px;
+    border-color: transparent;
+}
+.link-nav-header>li:hover{
+    background-color: rgb(104, 104, 104);
+}
+.active-navli-header{
+    border-color: #61dafb !important;
+}
+.content-brand-header{
+    font-size: 30px;
+    color: rgb(255,255,255);
+    width: 4.4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.a-nav-header{
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.left-header{
+    display: inline-flex;
+    height: 100%;
+    align-items: center;
+    float: right;
+}
+
+/* PESQUISA */
+.float-search{
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    height: auto;
+    width: 96%;
+}
+.content-first-search{
+    height: 50px;
+    width: 100%;
+    text-align: end;
+}
+.btns-float-search{
+    height: 100%;
+    width: 50px;
+}
+.btnc-float-search{
+    height: 100%;
+    width: 50px;
+}
+.btnCOn{
+    color:rgb(18, 184, 230) !important;
+}
+.basic-config-search{
+    height: 100%;
+    display: inline-flex;
+    transition-duration: 1s;
+    width: 0;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 0px black;
+    border-radius: 5px;
+    margin-right: 15px;
+    background-color: #dddddd;
+}
+.btn-float-search{
+    padding: 12px;
+    display: inline-grid;
+    align-items: center;
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+.bcsOn{
+    width: 60%;
+}
+
+.btnm-float-search{
+    height: 100%;
+    width: 50px;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px black;
+    cursor: pointer;
+}
+.btnMOn{
+    color: rgb(255,0,0);
+}
+.input-float-search{
+    width: 80%;
+    width: -moz-available;
+    width: -webkit-fill-available;
+    font-size: 20px;
+    padding: 0% 2%;
+    text-align: center;
+    border: transparent;
+}
+.avanced-config-search{
+    width: 100%;
+    height: 0vh;
+    background-color: #d2d2d2;
+    margin-top: 10px;
+    box-shadow: 0px 0px 30px 0px black;
+    border-radius: 1px;
+    transition-duration: 1s;
+}
+.acsOn{
+    height: 83vh;
+}
+/* --------------------------------------------------------- */
+
