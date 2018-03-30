@@ -18,7 +18,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header-main">
+    <header class="header-main fix-header">
         <div class="content-links-header">
             <a href="index.html" class="brand-header">
                 <span class="content-brand-header">Brand</span>
@@ -75,26 +75,37 @@
             <figure class="profile-image-curriculo">
                 <img src="image/profile.jpg" class="image-curriculo">
                 <figcaption>
-                    <h1>Fulano de tal <span>20 anos</span></h1>
+                    <h1>
+                        <span>20 anos</span>
+                    </h1>
                 </figcaption>
             </figure>
             <ul class="list-topic-curriculo">
-                <li><a href="#area-atuacao">Área de atuação</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#experiecia">Experiências</a></li>
+                <li>
+                    <a href="#area-atuacao" onclick="smoothScroll(event)">Área de atuação</a>
+                </li>
+                <li>
+                    <a href="#formacao" onclick="smoothScroll(event)">Formação</a>
+                </li>
+                <li>
+                    <a href="#experiecia" onclick="smoothScroll(event)">Experiências</a>
+                </li>
             </ul>
         </aside>
-        
+
         <article class="descri-part-curriculo">
-            <section id="area-atuacao" class="part-curriculo" style="background-color:aquamarine">
-
-            </section>
-            <section id="formacao" class="part-curriculo" style="background-color:rgb(53, 255, 27)">
-
-            </section>
-            <section id="experiecia" class="part-curriculo" style="background-color:rgb(89, 30, 252)">
-
-            </section>
+            <div class="page-cv">
+                <h1 class="title-cv">Fulano de tal</h1>
+                <section id="area-atuacao" class="section-cv">
+                    <h2 class="subtitle-cv">Área de atuação</h2>
+                </section>
+                <section id="formacao" class="section-cv">
+                    <h2 class="subtitle-cv">Formação</h2>
+                </section>
+                <section id="experiecia" class="section-cv">
+                    <h2 class="subtitle-cv">Experiêcia</h2>
+                </section>
+            </div>
         </article>
     </main>
 </body>
