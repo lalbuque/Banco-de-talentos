@@ -18,7 +18,7 @@
 
 <body>
     <!-- HEADER -->
-    <header class="header-main">
+    <header class="header-main fix-header">
         <div class="content-links-header">
             <a href="index.html" class="brand-header">
                 <span class="content-brand-header">Brand</span>
@@ -70,7 +70,44 @@
     </form>
     <script src="script/search-float.js"></script>
     <!-- FIM DA PESQUISA FLUTUANTE -->
-    <h1>Currículo</h1>
+    <main class="curriculo">
+        <aside class="main-part-curriculo">
+            <figure class="profile-image-curriculo">
+                <img src="image/profile.jpg" class="image-curriculo">
+                <figcaption>
+                    <h1>
+                        <span>20 anos</span>
+                    </h1>
+                </figcaption>
+            </figure>
+            <ul class="list-topic-curriculo">
+                <li>
+                    <a href="#area-atuacao" onclick="smoothScroll(event)">Área de atuação</a>
+                </li>
+                <li>
+                    <a href="#formacao" onclick="smoothScroll(event)">Formação</a>
+                </li>
+                <li>
+                    <a href="#experiecia" onclick="smoothScroll(event)">Experiências</a>
+                </li>
+            </ul>
+        </aside>
+
+        <article class="descri-part-curriculo">
+            <div class="page-cv">
+                <h1 class="title-cv">Fulano de tal</h1>
+                <section id="area-atuacao" class="section-cv">
+                    <h2 class="subtitle-cv">Área de atuação</h2>
+                </section>
+                <section id="formacao" class="section-cv">
+                    <h2 class="subtitle-cv">Formação</h2>
+                </section>
+                <section id="experiecia" class="section-cv">
+                    <h2 class="subtitle-cv">Experiêcia</h2>
+                </section>
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>
