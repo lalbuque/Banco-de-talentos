@@ -1,0 +1,51 @@
+/* Esse CSS tenta amenizar a diferença de estilização entre os navegadores */
+/* útima modificação: 29/03/2018 */
+/* Patch para padronizar a interface */
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+*{
+    font-family: Arial;
+}
+h1, h2 ,h3, h4, h5, h6{
+    margin: 0%;
+}
+
+button{
+    border: none;
+    padding: 5px;
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+    line-height: 20px;
+    font-size: 15px;
+}
+
+input{
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+a:-webkit-any-link{
+    text-decoration: none;
+}
+a:any-link{
+    text-decoration: none;
+}
+
+ol{
+    -webkit-margin-before: 2%;
+    -webkit-margin-after: 2%;
+    -webkit-padding-start: 5%;
+}
