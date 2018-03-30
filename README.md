@@ -33,5 +33,5 @@ Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
 <li>mkdir <nome-diretório>: Make Directory, Cria um ou mais diretórios. Ex: "mkdir dir1 dir2"</li>
 <li>rm -rf <file or dir>: Remove um ou mais arquivos ou diretórios;</li>
 <li>cd <directory>: Change Directory, Altera a localização do terminal para dentro de uma pasta especifica. Ex: "cd meuProjeto";</li>
-<ul>
+</ul>
 <p>OBSERVAÇÃO: Pressionar TAB auxiliar para completar nome extenso de arquivos existentes.</p>
