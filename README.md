@@ -10,7 +10,7 @@ Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
 
 ## Aquivos importantes:
 <p><a href="script/search-float.js">search-float.js: </a>Contém toda a lógica do botão de pesquisar flutuante.</p>
-<p><a href="style/default.css">default.css: </a>Tem a finalidade de minimizar a diferência de design nos navegadores. Conceito "cross-browser".</p>
+<p><a href="style/default.css">default.css: </a>Tem a finalidade de minimizar a diferênça de design nos navegadores. Conceito "cross-browser".</p>
 <p><a href="style/static.css">static.css: </a>Contém a estilização para os componentes que se repentem nas páginas (header e formulário de pesquisa).</p>
 
 ## Observações:
@@ -28,7 +28,7 @@ Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
 <li>git push -u origin: Empurra o trabalho do seu repositório para o repositório central.</li>
 </ul>
 
-### Comandos APENAS para Git bash ou terminas Linux e MAC
+### Comandos APENAS para Git bash, power shell ou terminas Linux e MAC
 <ul>
 <li>touch &lt;nome-arquivo&gt;: Cria um arquivo ou mais arquivos. Ex: "touch file1 fil2";</li>
 <li>mkdir &lt;nome-diretório&gt;: Make Directory, Cria um ou mais diretórios. Ex: "mkdir dir1 dir2"</li>
