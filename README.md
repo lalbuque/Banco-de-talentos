@@ -14,7 +14,7 @@ Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
 
 ## Observações:
 <p>1) Cada arquivo HTML tem o seu JS ou CSS com mesmo nome correspondente nos respectivos diretórios.</p>
-<p>2) Caso tenham de utilizar alguma biblioteca ou qualquer outro material que não deve ser comitado, adicione seu caminho dentro do arquivo <a href=".gitignore">.gitignore.<p>
+<p>2) Caso tenham de utilizar alguma biblioteca ou qualquer outro material que não deve ser comitado, adicione seu caminho dentro do arquivo <a href=".gitignore">.gitignore</a>.<p>
 ----------------------------------------------------------------------------------
 
 ## Comandos úteis:
