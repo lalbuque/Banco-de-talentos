@@ -19,7 +19,7 @@ Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
 
 ## Comandos úteis:
 <ul>
-<li>git clone <endereço>: Clona um repositório remoto para local;
+<li>git clone <endereço>: Clona um repositório remoto para local;</li>
 <li>git status: Exibe arquivos/diretórios adicionados em verde e não adicionados/modificados em vermelho;</li>
 <li>git add <nome> ou . :Adiciona um arquivos de especificado <nome> ou . para adicionar todos ao estágio "pré-commit";</li>
 <li>git commit -m "<menssagem>": Registra todos os arquivos adicionados em "git add..." como um ponto na "Linha do tempo";</li>
