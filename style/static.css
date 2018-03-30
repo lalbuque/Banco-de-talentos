@@ -6,7 +6,10 @@
     height: 10%;
     background-color: rgb(111, 111, 111);
 }
-
+.fix-header{
+    position: fixed;
+    z-index: 9;
+}
 .content-links-header{
     height: 100%;
     width: auto;
