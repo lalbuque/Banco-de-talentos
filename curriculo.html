@@ -82,6 +82,9 @@
             </figure>
             <ul class="list-topic-curriculo">
                 <li>
+                    <a href="#main" onclick="smoothScroll(event)">Início</a>
+                </li>
+                <li>
                     <a href="#area-atuacao" onclick="smoothScroll(event)">Área de atuação</a>
                 </li>
                 <li>
@@ -95,18 +98,102 @@
 
         <article class="descri-part-curriculo">
             <div class="page-cv">
-                <h1 class="title-cv">Fulano de tal</h1>
+                <h1 id="main" class="title-cv">Fulano de tal</h1>
+                <section class="section-cv" >
+
+                        <address style="display:none">
+                            <div>
+                                Jardim Maria Cristina, Barueri -
+                                <abbr title="São Paulo">SP</abbr>
+                            </div>
+                            <time datetime="1998-12-17">
+                                Data de nascimento: 17/12/1998
+                            </time>
+                            <div>Telefone:
+                                <a href="tel:+551143828659">(11) 43828659</a>
+                            </div>
+                            <div>Email:
+                                <a href="mailto:wesley.waaraujo@gmail.com">wesley.waaraujo@gmail.com</a>
+                            </div>
+                            <div>Site:
+                                <a href="http://www.linkedin.com/in/wesley-waraujo" target="_blank">linkedin.com/in/wesley-waraujo</a>
+                            </div>
+                            <div>Github:
+                                <a href="http://www.github.com/wesleyBU" target="_blank">github.com/wesleyBU</a>
+                            </div>
+                        </address>
+            
+                </section>
                 <section id="area-atuacao" class="section-cv">
                     <h2 class="subtitle-cv">Área de atuação</h2>
+                    <p>Full Stack Developer</p>
                 </section>
                 <section id="formacao" class="section-cv">
                     <h2 class="subtitle-cv">Formação</h2>
+                    <p>
+                        <ol>
+                            <li>
+                                <h3>Médio Técnico em manutenção e suporte para informática</h3>
+                                <address>
+                                    <abbr title="Instituto Técnico de Barueri">ITB</abbr> - Moacyr Domingues Sávio Veronezi</abbr>
+                                </address>
+                                <time>12/2017</time>
+                            </li>
+                        </ol>
+                    </p>
                 </section>
                 <section id="experiecia" class="section-cv">
                     <h2 class="subtitle-cv">Experiêcia</h2>
+                    <p>
+                        <ol>
+                            <li>
+                                <h3>Médio Técnico em manutenção e suporte para informática</h3>
+                                <address>
+                                    <abbr title="Instituto Técnico de Barueri">ITB</abbr> - Moacyr Domingues Sávio Veronezi</abbr>
+                                </address>
+                                <time>12/2017</time>
+                            </li>
+                        </ol>
+                    </p>
                 </section>
             </div>
         </article>
+        <script>
+            function newLink(id, tl) {
+                let item = document.createElement('li');
+                let link = document.createElement('a');
+                link.setAttribute('href', `#${id}`);
+                link.setAttribute('onclick', 'smoothScroll(event)');
+                link.innerText = tl;
+                item.appendChild(link);
+                return item;
+            }
+            function newSection(id, tl, ht) {
+                let section = document.createElement('section');
+                let title = document.createElement('h2');
+                title.classList.add('subtitle-cv');
+                title.innerText = tl;
+                section.classList.add('section-cv');
+                section.setAttribute('id', id);
+                section.appendChild(title);
+                section.innerHTML += ht;
+                return section;
+            }
+            function makeSection(id, tl, ht) {
+                let r = [];
+                r.push(newSection(id, tl, ht))
+                r.push(newLink(id, tl));
+
+                return r;
+            }
+
+            function fe(input) {
+                input.forEach(function (v, i) {
+                    console.log(`${i}:${v}`);
+                })
+            }
+            console.log(makeSection());
+        </script>
     </main>
 </body>
 

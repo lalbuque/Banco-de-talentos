@@ -19,7 +19,7 @@ body{
     width: 75%;
     margin-left: 25%;
     overflow: auto;
-    padding: 0% 80px;
+    padding: 0% 0px;
 }
 
 .profile-image-curriculo{
@@ -87,4 +87,7 @@ body{
 }
 .subtitle-cv::first-letter{
     text-transform: capitalize;
+}
+.form-section-cv{
+    
 }
