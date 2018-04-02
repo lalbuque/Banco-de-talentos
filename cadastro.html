@@ -4,15 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <title>Cadastro</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS importantes -->
     <link rel="stylesheet" href="style/default.css">
     <link rel="stylesheet" href="style/static.css">
-    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="style/cadastro.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -40,68 +38,94 @@
             </div>
         </header>
         <!-- FIM DA HEADER -->
-        <!-- SECTION LOGIN -->
-        <section>
+        <!-- SECTION CADASTRO -->
+        <section class="container">
 
-            <div class="container">
+            <div class="display">
+                    <div id="form-main">
+                            <div id="form-div">
+                              <form class="form" id="form1">
+                                
+                                <h2>Cadastro</h2>
+                                        <div>
+                                            <div >
+                                                <label>Usuário</label>
+                                                <input name="Usuario" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Usuario" id="Usuario" />
+                                            </div>
+                                            <div >
+                                                    <label>Email</label>
+                                                    <input name="Email" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Email" id="Email" />
+                                            </div>
 
-                    <form>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                              </div>
-                              <div class="form-group col-md-6">
-                                <label for="inputPassword4">Password</label>
-                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label for="inputAddress">Address</label>
-                              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                            </div>
-                            <div class="form-group">
-                              <label for="inputAddress2">Address 2</label>
-                              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                            </div>
-                            <div class="form-row">
-                              <div class="form-group col-md-6">
-                                <label for="inputCity">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                              </div>
-                              <div class="form-group col-md-4">
-                                <label for="inputState">State</label>
-                                <select id="inputState" class="form-control">
-                                  <option selected>Choose...</option>
-                                  <option>...</option>
-                                </select>
-                              </div>
-                              <div class="form-group col-md-2">
-                                <label for="inputZip">Zip</label>
-                                <input type="text" class="form-control" id="inputZip">
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <div class="form-check">
-                                <input class="form-check-input" type="checkbox" id="gridCheck">
-                                <label class="form-check-label" for="gridCheck">
-                                  Check me out
-                                </label>
-                              </div>
-                            </div>
-                            <button type="submit" class="btn btn-primary">Sign in</button>
-                          </form>
+                                            <div >
+                                                    <label>Endereço</label>
+                                                    <input name="Endereço" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Endereço" id="Endereço" />
+                                            </div>
+
+                                            <div class="div-radio">
+                                                    <input class="radio" type="radio" checked="" value="Residencial" id="r12" name="item2">
+                                                    <label class="radio circle" for="r12">
+                                                      <span class="big">
+                                                        <span class="small"></span>
+                                                      </span>Residencial
+                                                    </label>
+                                                    <input class="radio"type="radio" checked="" value="Celular" id="r22" name="item2">
+                                                    <label class="radio circle" for="r22">
+                                                      <span class="big">
+                                                        <span class="small"></span>
+                                                      </span>Celular
+                                                    </label>
+                                                    <input class="radio" type="radio" checked="" value="Comercial" id="r32" name="item2">
+                                                    <label class="radio circle" for="r32">
+                                                      <span class="big">
+                                                        <span class="small"></span>
+                                                      </span>Comercial
+                                                    </label>
+                                            </div>
+
+                                            <div>
+                                                    <label>Telefone</label>
+                                                    <input name="Celular" type="phone" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="(11) 9999-9999" id="Celular" />
+                                            </div>
+
+                                            <div >
+                                                    <label>Senha</label>
+                                                    <input name="Senha" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Senha" id="Senhar" />
+                                            </div>
+
+                                            <div >
+                                                    <label>Confirmar a senha</label>
+                                                    <input name="Confirmar a senha" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Confirmar a senha" id="Senha" />
+                                            </div>
+                                        
+                                          </div>
+
+
+                                            <div class="btm">
+                                                                        
+                                                <div class="submit">
+                                                        <input type="submit" value="Cadastrar" id="button-blue"/>
+                                                        <div class="ease"></div>
+                                                    </div>
+                                            </div>        
+                                                    <p class="msg">
+                                                        Você tambem pode se conectar usando as redes sociais:
+
+                                                    </p>
+                                                    <div class="img-social">
+                                                    
+                                                        <div class="img"><img src="./image/facebook.png"></div>
+                                                        <div class="img"><img src="./image/google.png"></div>
+                                                        <div class="img"><img src="./image/linkdin.png"></div>
+                                                    </div>
+                                            </div>
+                                            
+                                        </form>
+                                    </div>
+                                    </div>               
             </div>       
         </section>
-
-
-
-
-
-        <!-- FIM SECTION LOGIN -->
-
-
-
+        <!-- FIM SECTION CADASTRO -->
           <!-- PESQUISA FLUTUANTE -->
     <form class="float-search" method="GET" action="search.html">
             <div class="content-first-search">
@@ -129,6 +153,10 @@
         </form>
         <script src="script/search-float.js"></script>
         <!-- FIM DA PESQUISA FLUTUANTE -->
-    
+        <!-- FOOTER -->
+        
+        <!-- FIM FOOTER -->
+
+
 </body>
 </html>
