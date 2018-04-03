@@ -88,6 +88,48 @@ body{
 .subtitle-cv::first-letter{
     text-transform: capitalize;
 }
-.form-section-cv{
+
+
+/* COMPONENT CV */
+.input-form-cv{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #abb4bb;
+    outline: none;
+    line-height: 0px;
+    transition-duration: 1s;
+    padding: 0 5px;
+}
+
+.input-form-cv:focus{
+    box-shadow: 0px 4px 5px -3px #2fb2ff;
+    border-width: 0px 0px 1px 0px;
+    border-color: #2fb2ff;
+}
+input[type=number].input-form-cv{
+    text-align: center;
+}
+input[type=url].input-form-cv{
+    width: 300px;
+}
+.btn-add-in-cv{
+    width: 56%;
+    cursor: pointer;
+}
+.rm-link-in-cv{
     
+}
+
+.item-formation-cv{
+    display: flex;
+}
+.item-Experiencia-cv{
+    display: flex;
+}
+.item-Curse-cv{
+    display: flex;
+}
+.container-btn-rm-cv{
+    display: flex;
+    align-items: center;
 }
