@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/wesleyBU/banco-de-talentos/issues"
   },
-  "homepage": "https://github.com/wesleyBU/banco-de-talentos#readme"
+  "homepage": "https://github.com/wesleyBU/banco-de-talentos#readme",
+  "dependencies": {
+    "imask": "^3.1.2"
+  }
 }

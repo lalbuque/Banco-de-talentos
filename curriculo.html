@@ -99,39 +99,108 @@
         <article class="descri-part-curriculo">
             <div class="page-cv">
                 <h1 id="main" class="title-cv">Fulano de tal</h1>
-                <section class="section-cv" >
-
-                        <address style="display:none">
-                            <div>
-                                Jardim Maria Cristina, Barueri -
-                                <abbr title="São Paulo">SP</abbr>
+                <section class="section-cv">
+                    <form id="main-section">
+                        <input type="hidden" name="section" value="main">
+                        <p>
+                            Endereço:
+                            <input type="text" name="address[district]" maxlength="50" class="input-form-cv" placeholder="Bairro">,
+                            <input type="text" name="address[city]" maxlength="50" class="input-form-cv" placeholder="Municipio">-
+                            <input type="text" name="address[state]" maxlength="50" class="input-form-cv" placeholder="Estado">
+                        </p>
+                        <p>
+                            Data de nascimento:
+                            <input type="number" min="01" max="31" class="input-form-cv" name="date[day]" placeholder="00">/
+                            <input type="number" min="01" max="12" class="input-form-cv" name="date[mounth]" placeholder="00">/
+                            <input type="number" min="1900" max="2018" class="input-form-cv" name="date[year]" placeholder="0000">
+                        </p>
+                        <p>
+                            Telefone: (
+                            <input type="number" name="contact[phone][ddd]" min="001" max="99" class="input-form-cv" placeholder="99">)
+                            <input type="number" name="contact[phone][numm]" min="11111111" max="99999999" class="input-form-cv" placeholder="99999999">
+                        </p>
+                        <p>
+                            Email:
+                            <input type="email" name="contact[email]" class="input-form-cv" placeholder="exemple@provedor.com">
+                        </p>
+                        <p>
+                            Site:
+                            <input type="url" name="contact[site]" class="input-form-cv" placeholder="mysite.domain">
+                        </p>
+                        <div>
+                            Outros links
+                            <div class="other-links">
+                                <p id="linkcv0">
+                                    <input type="text" name="contact[link][0][nome]" class="input-form-cv" placeholder="ex: Github">
+                                    <input type="url" name="contact[link][0][url]" class="input-form-cv" placeholder="https://www.github.com/myGithubProfile">
+                                    <button type="button" class="rm-link-in-cv" onclick="rmById('linkcv0')">x</button>
+                                </p>
                             </div>
-                            <time datetime="1998-12-17">
-                                Data de nascimento: 17/12/1998
-                            </time>
-                            <div>Telefone:
-                                <a href="tel:+551143828659">(11) 43828659</a>
-                            </div>
-                            <div>Email:
-                                <a href="mailto:wesley.waaraujo@gmail.com">wesley.waaraujo@gmail.com</a>
-                            </div>
-                            <div>Site:
-                                <a href="http://www.linkedin.com/in/wesley-waraujo" target="_blank">linkedin.com/in/wesley-waraujo</a>
-                            </div>
-                            <div>Github:
-                                <a href="http://www.github.com/wesleyBU" target="_blank">github.com/wesleyBU</a>
-                            </div>
-                        </address>
-            
+                            <button type="button" id="btnaddotherlink" class="btn-add-in-cv">+</button>
+                        </div>
+                        <button type="submit">Salvar</button>
+                    </form>
+                    <address style="display:none">
+                        <div>
+                            Jardim Maria Cristina, Barueri -
+                            <abbr title="São Paulo">SP</abbr>
+                        </div>
+                        <time datetime="1998-12-17">
+                            Data de nascimento: 17/12/1998
+                        </time>
+                        <div>Telefone:
+                            <a href="tel:+551143828659">(11) 43828659</a>
+                        </div>
+                        <div>Email:
+                            <a href="mailto:wesley.waaraujo@gmail.com">wesley.waaraujo@gmail.com</a>
+                        </div>
+                        <div>Site:
+                            <a href="http://www.linkedin.com/in/wesley-waraujo" target="_blank">linkedin.com/in/wesley-waraujo</a>
+                        </div>
+                        <div>Github:
+                            <a href="http://www.github.com/wesleyBU" target="_blank">github.com/wesleyBU</a>
+                        </div>
+                    </address>
                 </section>
                 <section id="area-atuacao" class="section-cv">
                     <h2 class="subtitle-cv">Área de atuação</h2>
-                    <p>Full Stack Developer</p>
+                    <p style="display:none">Full Stack Developer</p>
+                    <form>
+                        <p>
+                            <input type="hidden" name="section" value="objective">
+                            <input type="text" name="objective" maxlength="100" class="input-form-cv" placeholder="Full Stack Developer">
+                            <button type="submit">Salvar</button>
+                        </p>
+                    </form>
                 </section>
                 <section id="formacao" class="section-cv">
                     <h2 class="subtitle-cv">Formação</h2>
-                    <p>
-                        <ol>
+                    <form>
+                        <input type="hidden" name="section" value="formation">
+                        <ol id="containerFormation">
+                            <li id="itemFormation0" class="item-formation-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="[0][name]" required maxlength="20" class="input-form-cv" placeholder="Análise e Desenvolvimento de Sistemas">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="[0][institute]" required maxlength="20" class="input-form-cv" placeholder="Nome da instituição">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="[0][done][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="[0][done][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                </div>
+                                <div class="container-btn-rm-cv">
+                                    <button type="button" onclick="rmById('itemFormation0')">x</button>
+                                </div>
+                            </li>
+                        </ol>
+                        <button type="button" id="btnAddFormation" class="btn-add-in-cv">+</button>
+                        <button>Salvar</button>
+                    </form>
+                    <p style="display:none;">
+                        <ol style="display:none;">
                             <li>
                                 <h3>Médio Técnico em manutenção e suporte para informática</h3>
                                 <address>
@@ -143,9 +212,37 @@
                     </p>
                 </section>
                 <section id="experiecia" class="section-cv">
-                    <h2 class="subtitle-cv">Experiêcia</h2>
-                    <p>
-                        <ol>
+                    <h2 class="subtitle-cv">Experiêcias</h2>
+                    <form>
+                        <ol id="containerExperience">
+                            <li id="itemExperience0" class="item-Experiencia-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="experience[0][name]" required maxlength="20" class="input-form-cv" placeholder="Fundação Instituto de Educação de Barueri">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="experience[0][date][b][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="experience[0][date][b][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999"> até
+                                        <input type="number" name="experience[0][date][e][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="experience[0][date][e][month]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="experience[0][office]" required maxlength="20" class="input-form-cv" placeholder="Técnico de Manutenção">
+                                    </p>
+                                    <p>
+                                        <textarea name="experience[0][summary]" cols="30" rows="10" placeholder="Uma breve descrição sobre suas atividades de resultados"></textarea>
+                                    </p>
+                                </div>
+                                <div class="container-btn-rm-cv">
+                                    <button type="button" onclick="rmById('itemExperience0')">x</button>
+                                </div>
+                            </li>
+                        </ol>
+                        <button type="button" id="btnAddExperience" class="btn-add-in-cv">+</button>
+                        <button>Salvar</button>
+                    </form>
+                    <p style="display:none">
+                        <ol style="display:none">
                             <li>
                                 <h3>Médio Técnico em manutenção e suporte para informática</h3>
                                 <address>
@@ -155,6 +252,33 @@
                             </li>
                         </ol>
                     </p>
+                </section>
+                <section id="curso" class="section-cv">
+                    <h2 class="subtitle-cv">Cursos</h2>
+                    <form>
+                        <input type="hidden" name="section" value="curse">
+                        <ol id="containerCurse">
+                            <li id="itemCurse0" class="item-Curse-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="[0][name]" required maxlength="20" class="input-form-cv" placeholder="IT Essential">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="[0][institute]" required maxlength="20" class="input-form-cv" placeholder="Nome da instituição">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="[0][done][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="[0][done][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                </div>
+                                <div class="container-btn-rm-cv">
+                                    <button type="button" onclick="rmById('itemCurse0')">x</button>
+                                </div>
+                            </li>
+                        </ol>
+                        <button type="button" id="btnAddCurse" class="btn-add-in-cv">+</button>
+                        <button>Salvar</button>
+                    </form>
                 </section>
             </div>
         </article>
@@ -195,6 +319,7 @@
             console.log(makeSection());
         </script>
     </main>
+    <script src="script/curriculo/componente/main-section.js"></script>
 </body>
 
 </html>

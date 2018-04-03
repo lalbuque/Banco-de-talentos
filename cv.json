@@ -12,8 +12,14 @@
             "year":0
         },
         "contact":{
-            "phone":"",
-            "mobile":"",
+            "phone":{
+                "ddd":0,
+                "num":0
+            },
+            "mobile":{
+                "ddd":0,
+                "num":0
+            },
             "email":""
         },
         "site":"",
@@ -46,7 +52,7 @@
     "experience":[
         {
             "name":"",
-            "tempo":{
+            "date":{
                 "b":{
                     "month":0,
                     "year":0
