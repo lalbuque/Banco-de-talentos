@@ -4,24 +4,13 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
-.cabeça-de-lampada{
-    width: 25%;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cabeça-de-lampada > img{
-    width: 100%;
-}
 
 .footer{
     background: rgba(111,111,111);
     color: white;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+
 }
 
 .box-texto{
