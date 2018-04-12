@@ -60,6 +60,9 @@
     width: 4.4em;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
+    
+        
 }
 
 .a-nav-header{
@@ -68,6 +71,7 @@
     color: inherit;
     font-weight: bold;
     padding: 0 10px;
+    text-decoration: none;
 }
 
 .left-header{
@@ -156,6 +160,64 @@
 }
 .acsOn{
     height: 83vh;
+}
+
+#rodape{
+
+	border-top: 1px solid #393A3E;
+	color: rgb(51,38,34);
+	font-family:Copperplate Gothic Bold;
+	text-align: center;
+	margin-left: auto;
+}
+
+#rodape #img{
+
+	width: 500px;
+	height: 200px;
+	background-image: url("../image/0012.png");
+	float: left;
+	overflow:hidden;
+
+}
+
+#rodape #endereco {
+
+	width: 620px; /*largura */
+	height: 200px; /*altura*/
+	font-size: 12pt;
+	padding-top: 55px; 
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+	float: left;
+	line-height: 30px;
+
+}
+
+#rodape #redes {
+
+	padding-top: 90px;
+	width: 220px; /*largura */
+	height: 200px;
+	font-size: 10pt;
+	float: left;
+	line-height: 21px;
+	text-align: left;
+
+
+}
+#rodape #redes img{
+
+	width:20px; /*largura */
+	height:20px; /*altura*/
+
+}
+
+#rodape #redes a{
+
+	text-decoration: none; /*retira o sublinhado do link*/
+	color: rgba(51,38,34,0.8);
+
 }
 /* --------------------------------------------------------- */
 
