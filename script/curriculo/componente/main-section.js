@@ -12,7 +12,7 @@ bAL.addEventListener('click', () => {
     con.innerHTML += `<p id="linkcv${nLinkCount}">
     <input type="text" name="contact[link][${nLinkCount}][nome]" class="input-form-cv" placeholder="ex: Github">
     <input type="url" name="contact[link][${nLinkCount}][url]" class="input-form-cv" placeholder="https://www.github.com/myGithubProfile">
-    <button type="button" class="rm-link-in-cv" onclick="rmById('linkcv${nLinkCount}')">x</button>
+    <button type="button" class="button" onclick="rmById('linkcv${nLinkCount}')">Remover</button>
     </p>`
 });
 /* End Section Main */
@@ -38,7 +38,7 @@ btnAF.addEventListener('click', () => {
         </p>
     </div>
     <div class="container-btn-rm-cv">
-        <button type="button" onclick="rmById('itemFormation${nFCount}')">x</button>
+        <button type="button" class="button" onclick="rmById('itemFormation${nFCount}')">Remover</button>
     </div>
 </li>
     `;
@@ -72,7 +72,7 @@ btnAE.addEventListener('click', () => {
         </p>
     </div>
     <div class="container-btn-rm-cv">
-        <button type="button" onclick="rmById('itemExperience${nECount}')">x</button>
+        <button type="button" class="button" onclick="rmById('itemExperience${nECount}')">Remover</button>
     </div>
     </li>
     `;
@@ -100,7 +100,7 @@ btnAC.addEventListener('click', () => {
         </p>
     </div>
     <div class="container-btn-rm-cv">
-        <button type="button" onclick="rmById('itemFormation${nCCount}')">x</button>
+        <button type="button" class="button" onclick="rmById('itemFormation${nCCount}')">Remover</button>
     </div>
 </li>
     `;
