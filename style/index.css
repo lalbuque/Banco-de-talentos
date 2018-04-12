@@ -4,7 +4,12 @@
     font-family: Helvetica, Arial, sans-serif;
 }
 
+#fonte-index ol li a{
+    text-decoration: none;
+    size: inherit;
+	color: white;
 
+}
 .footer{
     background: rgba(111,111,111);
     color: white;
