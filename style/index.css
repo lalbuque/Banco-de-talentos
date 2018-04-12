@@ -17,8 +17,16 @@
     width: 100%;
 }
 
+.footer{
+    background: rgba(111,111,111);
+    color: white;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 .box-texto{
-    width: 80%;
+    padding: 0;
+    width: 100%;
     margin: 0 auto;
     padding: 110px 0px 110px;
 }
@@ -35,16 +43,7 @@
     flex-direction: row;
     flex-wrap: wrap;
 }
-.banner-box{
-    width: 80%;
-    margin: 0 auto;
-}
 
-.banner{
-    width: 100%;
-    box-shadow: 0px 0px 35px rgba(56, 176, 222, 0.67);
-    border: 0;
-}
 
 .banner > img{
     width: 100%;
@@ -83,14 +82,3 @@ footer{
     display: flex;
     flex-wrap: nowrap;
 }
-
-footer > div{
-    align-items: right;
-}
-
-
-p{
-    font-size: 100%;
-}
-
-
