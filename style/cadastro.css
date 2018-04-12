@@ -18,7 +18,37 @@ body{
     background-color: #2f3f4f;
 }
 
+#adm{
+    width: 300px;
+}
 
+#saida{
+    width: 300px ;
+}
+
+.data-emprego{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.data-faculdade{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#data-inicio{
+
+    width: 300px;
+}
+
+#data-final{
+
+    width: 300px;
+}
 .container{
     margin-left: 2%;
     margin-top: 10vh;
