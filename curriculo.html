@@ -26,57 +26,21 @@
             <nav class="navbar-header">
                 <ol class="link-nav-header">
                     <li class="active-navli-header">
-                        <a href="#" class="a-nav-header">edit1</a>
+                        <a href="index.html" class="a-nav-header">Home</a>
                     </li>
-                    <li>
-                        <a href="#" class="a-nav-header">edit2</a>
-                    </li>
-                    <li>
-                        <a href="#" class="a-nav-header">edit3</a>
-                    </li>
+
                 </ol>
             </nav>
         </div>
-        <div class="left-header">
-            Aqui é de acordo com a página.
-        </div>
     </header>
     <!-- FIM DA HEADER -->
-
-    <!-- PESQUISA FLUTUANTE -->
-    <form class="float-search" method="GET" action="search.html">
-        <div class="content-first-search">
-            <div class="basic-config-search">
-                <input type="search" class="input-float-search" required placeholder="Adorei sá merda. :)" name="search">
-                <button type="button" class="btn-float-search btnc-float-search">
-                    <svg aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-cog fa-w-16">
-                        <path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path>
-                    </svg>
-                </button>
-                <hr class="div-btn-float-search">
-                <button type="submit" class="btn-float-search btns-float-search">
-                    <svg aria-hidden="true" data-prefix="fas" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
-                        class="svg-inline--fa fa-search fa-w-16">
-                        <path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path>
-                    </svg>
-                </button>
-            </div>
-            <button type="button" class="btnm-float-search">+</button>
-        </div>
-        <div class="avanced-config-search">
-
-        </div>
-    </form>
-    <script src="script/search-float.js"></script>
-    <!-- FIM DA PESQUISA FLUTUANTE -->
     <main class="curriculo">
         <aside class="main-part-curriculo">
             <figure class="profile-image-curriculo">
-                <img src="image/profile.jpg" class="image-curriculo">
+                <img src="image/user.png" class="image-curriculo">
                 <figcaption>
                     <h1>
-                        <span>20 anos</span>
+                        <span>fulano de Tal</span>
                     </h1>
                 </figcaption>
             </figure>
@@ -98,7 +62,7 @@
 
         <article class="descri-part-curriculo">
             <div class="page-cv">
-                <h1 id="main" class="title-cv">Fulano de tal</h1>
+                <h1 id="main" class="title-cv">curriculo</h1>
                 <section class="section-cv">
                     <form id="main-section">
                         <input type="hidden" name="section" value="main">
@@ -133,12 +97,12 @@
                                 <p id="linkcv0">
                                     <input type="text" name="contact[link][0][nome]" class="input-form-cv" placeholder="ex: Github">
                                     <input type="url" name="contact[link][0][url]" class="input-form-cv" placeholder="https://www.github.com/myGithubProfile">
-                                    <button type="button" class="rm-link-in-cv" onclick="rmById('linkcv0')">x</button>
+                                    <button type="button" class="button" onclick="rmById('linkcv0')">Remover</button>
                                 </p>
                             </div>
-                            <button type="button" id="btnaddotherlink" class="btn-add-in-cv">+</button>
+                            <button type="button" id="btnaddotherlink" class="button">Adicionar</button>
                         </div>
-                        <button type="submit">Salvar</button>
+                        <button type="submit" class="button">Salvar</button>
                     </form>
                     <address style="display:none">
                         <div>
@@ -169,7 +133,7 @@
                         <p>
                             <input type="hidden" name="section" value="objective">
                             <input type="text" name="objective" maxlength="100" class="input-form-cv" placeholder="Full Stack Developer">
-                            <button type="submit">Salvar</button>
+                            <button type="submit" class="button">Salvar</button>
                         </p>
                     </form>
                 </section>
@@ -192,12 +156,12 @@
                                     </p>
                                 </div>
                                 <div class="container-btn-rm-cv">
-                                    <button type="button" onclick="rmById('itemFormation0')">x</button>
+                                    <button type="button" onclick="rmById('itemFormation0')" class="button">Remover</button>
                                 </div>
                             </li>
                         </ol>
-                        <button type="button" id="btnAddFormation" class="btn-add-in-cv">+</button>
-                        <button>Salvar</button>
+                        <button type="button" id="btnAddFormation" class="button">Adicionar</button>
+                        <button class="button">Salvar</button>
                     </form>
                     <p style="display:none;">
                         <ol style="display:none;">
@@ -234,12 +198,12 @@
                                     </p>
                                 </div>
                                 <div class="container-btn-rm-cv">
-                                    <button type="button" onclick="rmById('itemExperience0')">x</button>
+                                    <button type="button" class="button" onclick="rmById('itemExperience0')">Remover</button>
                                 </div>
                             </li>
                         </ol>
-                        <button type="button" id="btnAddExperience" class="btn-add-in-cv">+</button>
-                        <button>Salvar</button>
+                        <button type="button" id="btnAddExperience" class="button">Adicionar</button>
+                        <button class="button">Salvar</button>
                     </form>
                     <p style="display:none">
                         <ol style="display:none">
@@ -272,12 +236,12 @@
                                     </p>
                                 </div>
                                 <div class="container-btn-rm-cv">
-                                    <button type="button" onclick="rmById('itemCurse0')">x</button>
+                                    <button type="button" class="button" onclick="rmById('itemCurse0')">Remover</button>
                                 </div>
                             </li>
                         </ol>
-                        <button type="button" id="btnAddCurse" class="btn-add-in-cv">+</button>
-                        <button>Salvar</button>
+                        <button type="button" id="btnAddCurse" class="button">Adicionar</button>
+                        <button class="button">Salvar</button>
                     </form>
                 </section>
             </div>

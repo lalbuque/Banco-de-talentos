@@ -1,3 +1,5 @@
+
+
 body{
     overflow: hidden;
 }
@@ -10,7 +12,7 @@ body{
 
 .main-part-curriculo{
     width: 25%;
-    background-color: #c1c1c1;
+    background-color: rgba(6, 6, 8, 0.075);
     position: fixed;
     height: 100%;
 }
@@ -62,6 +64,26 @@ body{
     padding: 2% 0%;
 }
 /* estilização do CV */
+.button{
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: #ffff;
+    border: rgba(8, 8, 8, 0.534) 0.5px solid;
+    color: rgba(8, 8, 8, 0.534);
+    height: 5vh;
+    width: 200px;
+    margin-left: 3px;
+
+
+    
+
+}
+
+.button:hover{
+    background: rgb(179, 179, 179);
+    transition: 0.5s;
+}
+
 .page-cv{
     width: 100%;
     height: auto;
