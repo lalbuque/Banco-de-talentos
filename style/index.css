@@ -10,13 +10,29 @@
 	color: white;
 
 }
-.footer{
-    background: rgba(111,111,111);
-    color: white;
-    text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
-
+.pesquisa{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
 }
+
+.pesquisa button{
+    border-radius: 15px;
+}
+
+
+.pesquisa input{
+    border-radius: 15px;
+    
+}
+
+.pesquisa input:hover{
+    width: 500px;
+    transition-duration: 1s;
+}
+
+
 
 .box-texto{
     padding: 0;

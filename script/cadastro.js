@@ -14,22 +14,31 @@ app.get('/', (req, res) => {
   });
 });
 
-app.cadastro('/', (req, res) => {
+app.cadastroUsuario('/', (req, res) => {
   let dados = {
-    titulo: req.body.titulo,
-    autor: req.body.autor,
-    data: req.body.data,
-    conteudo: req.body.conteudo,
-    imagem: req.body.imagem
-  };
+    usuario: req.body.usuario,
+    email: req.body.email,
+    endereco: req.body.endereco,
+    telefone: req.body.telefone,
+    senha: req.body.senha,
+    instituicao: req.body.instituicao,
+    curso: req.body.curso,
+    dataInicioInstituicao: req.body.dataInicioInstituicao,
+    dataFimInstituicao: req.body.dataFimInstituicao,
+    empresa: req.body.empresa,
+    cargo: req.body.cargo,
+    dataAdmissao: req.body.dataAdmissao,
+    dataDemissao: req.body.dataDemissao,
+    empresaAtual: req.body.empresaAtual
+  }};
 
   //validação
-  if(!dados.titulo || !dados.autor || !dados.conteudo){
-    res.status(400).send('É necessário enviar titulo, autor e conteúdo');
+  if(!dados.usuario || !dados.email || !dados.telefone || !dados.senha ){
+    res.status(400).send('É necessário preencher os campos obrigatórios');
     return;
   }
 
-  req.db.collection('posts').insert(dados, (err, dados) => {
+  req.db.collection('cadastroUsuário').insert(dados, (err, dados) => {
     res.send(dados);
   });  
 
