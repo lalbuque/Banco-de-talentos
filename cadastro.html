@@ -83,12 +83,12 @@
 
                                             <div >
                                                     <label>Senha</label>
-                                                    <input name="Senha" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Senha" id="Senhar" />
+                                                    <input name="Senha" type="password" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Senha" id="Senhar" />
                                             </div>
 
                                             <div >
                                                     <label>Confirmar a senha</label>
-                                                    <input name="Confirmar a senha" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Confirmar a senha" id="Senha" />
+                                                    <input name="Confirmar a senha" type="password" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Confirmar a senha" id="Senha" />
                                             </div>
                                             
                                             <h2> Formação acadêmica</h2>
@@ -102,6 +102,18 @@
                                                 <label>Curso</label>
                                                 <input name="Curso" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome Curso" id="Curso" />
                                              </div>
+
+                                             <label>Tipo de formação</label>
+                                             <select class="select">
+                                                
+                                                <option>Selecionar:</option>
+                                                <option>Técnico</option>
+                                                <option>Graduação</option>
+                                                <option>Mestrado</option>
+                                                <option>Doutorado</option>
+                                                                                
+                                            </select>
+
                                             <div class="data-faculdade">
                                              <div>
                                                 <label>Data de Inicio</label>
@@ -141,6 +153,65 @@
                                                 <input type="checkbox" >
                                                 Empresa atual
                                               </label> 
+
+                                            <h2> Idiomas </h2>
+
+                                            <div>
+                                                
+                                                <select class="select">
+                                                    
+                                                    <option>Inglês</option>
+                                                    <option>Básico</option>
+                                                    <option>Intermediário</option>
+                                                    <option>Avançado</option>
+                                                                                    
+                                                </select>
+
+                                                <select class="select">
+                                                    
+                                                    <option>Enpanhol</option>
+                                                    <option>Básico</option>
+                                                    <option>Intermediário</option>
+                                                    <option>Avançado</option>
+                                                                                    
+                                                </select>
+
+                                             </div>
+
+                                             <h2> Formações complementares </h2>
+
+                                             <div>
+                                                <label>Instituição de ensino</label>
+                                                <input name="Instituição" type="Text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome da Instituição" id="Instituição" />
+                                             </div>
+
+                                             <div>
+                                                <label>Curso</label>
+                                                <input name="Curso" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Nome Curso" id="Curso" />
+                                             </div>
+                                            <div class="data-faculdade">
+                                             <div>
+                                                <label>Data de Inicio</label>
+                                                <input id="data-inicio" name="Data de Inicio" type="date" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="dd/mm/aaaa" id="Inicio do Curso" />
+                                             </div>
+
+                                             <div>
+                                                <label>Data de Conclusão</label>
+                                                <input id="data-final" name="Data de Conclusão" type="date" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="dd/mm/aaaa" id="Inicio de conclusão" />
+                                             </div>
+                                            </div>
+
+                                            
+
+
+
+
+                                             <h2> Resumo do Cúrriculo </h2>
+
+                                             <textarea></textarea>
+
+
+
                                         
                                           </div>
 
@@ -170,7 +241,7 @@
             </div>       
         </section>
         <!-- FIM SECTION CADASTRO -->
-          <!-- PESQUISA FLUTUANTE -->
+          <!-- PESQUISA FLUTUANTE 
     <form class="float-search" method="GET" action="search.html">
             <div class="content-first-search">
                 <div class="basic-config-search">
@@ -196,7 +267,7 @@
             </div>
         </form>
         <script src="script/search-float.js"></script>
-        <!-- FIM DA PESQUISA FLUTUANTE -->
+         FIM DA PESQUISA FLUTUANTE -->
         <!-- FOOTER -->
         
         <!-- FIM FOOTER -->
