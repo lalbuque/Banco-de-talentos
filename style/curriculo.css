@@ -25,7 +25,7 @@ body{
 }
 
 .profile-image-curriculo{
-    width: 100%;
+    width: 99%;
     height: 28%;
     margin: 0;
     text-align: center;
@@ -37,7 +37,7 @@ body{
 }
 .list-topic-curriculo{
     list-style-type: none;
-    padding: 0% 2%;
+    padding: 7% 2%;
 }
 
 .list-topic-curriculo > li{
