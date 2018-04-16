@@ -10,14 +10,54 @@
 	color: white;
 
 }
+<<<<<<< HEAD
 
 .footer{
     background: rgba(111,111,111);
     color: white;
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
+=======
+>>>>>>> 4387df73949e0a4637eade92faa9ac7ac9cb6a87
+
+.logotipo{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    height: 5vh;
 
 }
+
+.logotipo img{
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+
+}
+
+.pesquisa{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
+}
+
+.pesquisa button{
+    border-radius: 15px;
+}
+
+
+.pesquisa input{
+    border-radius: 15px;
+    
+}
+
+.pesquisa input:hover{
+    width: 500px;
+    transition-duration: 1s;
+}
+
+
 
 .box-texto{
     padding: 0;

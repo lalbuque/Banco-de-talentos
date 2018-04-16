@@ -69,6 +69,32 @@
         
 }
 
+.pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+ }
+ 
+ .pesquisa button{
+     border-radius: 15px;
+ }
+ 
+ 
+ .pesquisa input{
+     border-radius: 15px;
+     
+ }
+ 
+ .pesquisa input:hover{
+     width: 500px;
+     transition-duration: 1s;
+ }
+ 
+.rodape{
+    background-color: white;
+}
+
 .a-nav-header{
     font-family: inherit;
     font-size: inherit;
