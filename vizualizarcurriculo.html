@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currículo</title>
+
+    <!-- CSS importantes -->
+    <link rel="stylesheet" href="style/default.css">
+    <link rel="stylesheet" href="style/static.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- CSS da página -->
+    <link rel="stylesheet" href="style/curriculo.css">
+    <!-- JS da página -->
+    <script src="script/curriculo.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header-main fix-header">
+        <div class="content-links-header">
+            <a href="index.html" class="brand-header">
+                <span class="content-brand-header">OneJob</span>
+            </a>
+            <nav class="navbar-header">
+                <ol class="link-nav-header">
+                    <li class="active-navli-header">
+                        <a href="index.html" class="a-nav-header">Home</a>
+                    </li>
+
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <!-- FIM DA HEADER -->
+    <main class="curriculo">
+        <aside class="main-part-curriculo">
+            <figure class="profile-image-curriculo">
+                <img src="image/user.png" class="image-curriculo">
+                <figcaption>
+                    <h1>
+                        <span>fulano de Tal</span>
+                    </h1>
+                </figcaption>
+            </figure>
+            <ul class="list-topic-curriculo">
+                <li>
+                    <a href="#main" onclick="smoothScroll(event)">Início</a>
+                </li>
+                <li>
+                    <a href="#area-atuacao" onclick="smoothScroll(event)">Área de atuação</a>
+                </li>
+                <li>
+                    <a href="#formacao" onclick="smoothScroll(event)">Formação</a>
+                </li>
+                <li>
+                    <a href="#experiecia" onclick="smoothScroll(event)">Experiências</a>
+                </li>
+            </ul>
+        </aside>
+
+        <article class="descri-part-curriculo">
+            <div class="page-cv">
+                <h1 id="main" class="title-cv">curriculo</h1>
+                <section class="section-cv">
+                    <form id="main-section">
+                        <input type="hidden" name="section" value="main">
+                        <p>
+                            Endereço:
+                             
+                            <P class="input-form-cv">Rua, Bairro - Estado</P>, 
+                            <input type="text" name="address[city]" maxlength="50" class="input-form-cv" placeholder="Municipio">-
+                            <input type="text" name="address[state]" maxlength="50" class="input-form-cv" placeholder="Estado">
+                        </p>
+                        <p>
+                            Data de nascimento:
+                            <input type="number" min="01" max="31" class="input-form-cv" name="date[day]" placeholder="00">/
+                            <input type="number" min="01" max="12" class="input-form-cv" name="date[mounth]" placeholder="00">/
+                            <input type="number" min="1900" max="2018" class="input-form-cv" name="date[year]" placeholder="0000">
+                        </p>
+                        <p>
+                            Telefone: (
+                            <input type="number" name="contact[phone][ddd]" min="001" max="99" class="input-form-cv" placeholder="99">)
+                            <input type="number" name="contact[phone][numm]" min="11111111" max="99999999" class="input-form-cv" placeholder="99999999">
+                        </p>
+                        <p>
+                            Email:
+                            <input type="email" name="contact[email]" class="input-form-cv" placeholder="exemple@provedor.com">
+                        </p>
+                        <p>
+                            Site:
+                            <input type="url" name="contact[site]" class="input-form-cv" placeholder="mysite.domain">
+                        </p>
+                        <div>
+                            Outros links
+                            <div class="other-links">
+                                <p id="linkcv0">
+                                    <input type="text" name="contact[link][0][nome]" class="input-form-cv" placeholder="ex: Github">
+                                    <input type="url" name="contact[link][0][url]" class="input-form-cv" placeholder="https://www.github.com/myGithubProfile">
+                                    
+                    </form>
+                    <address style="display:none">
+                        <div>
+                            Jardim Maria Cristina, Barueri -
+                            <abbr title="São Paulo">SP</abbr>
+                        </div>
+                        <time datetime="1998-12-17">
+                            Data de nascimento: 17/12/1998
+                        </time>
+                        <div>Telefone:
+                            <a href="tel:+551143828659">(11) 43828659</a>
+                        </div>
+                        <div>Email:
+                            <a href="mailto:wesley.waaraujo@gmail.com">wesley.waaraujo@gmail.com</a>
+                        </div>
+                        <div>Site:
+                            <a href="http://www.linkedin.com/in/wesley-waraujo" target="_blank">linkedin.com/in/wesley-waraujo</a>
+                        </div>
+                        <div>Github:
+                            <a href="http://www.github.com/wesleyBU" target="_blank">github.com/wesleyBU</a>
+                        </div>
+                    </address>
+                </section>
+                <section id="area-atuacao" class="section-cv">
+                    <h2 class="subtitle-cv">Área de atuação</h2>
+                    <p style="display:none">Full Stack Developer</p>
+                    <form>
+                        <p>
+                            <input type="hidden" name="section" value="objective">
+                            <input type="text" name="objective" maxlength="100" class="input-form-cv" placeholder="Full Stack Developer">
+                            
+                        </p>
+                    </form>
+                </section>
+                <section id="formacao" class="section-cv">
+                    <h2 class="subtitle-cv">Formação</h2>
+                    <form>
+                        <input type="hidden" name="section" value="formation">
+                        <ol id="containerFormation">
+                            <li id="itemFormation0" class="item-formation-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="[0][name]" required maxlength="20" class="input-form-cv" placeholder="Análise e Desenvolvimento de Sistemas">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="[0][institute]" required maxlength="20" class="input-form-cv" placeholder="Nome da instituição">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="[0][done][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="[0][done][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                </div>
+                    </form>
+                    <p style="display:none;">
+                        <ol style="display:none;">
+                            <li>
+                                <h3>Médio Técnico em manutenção e suporte para informática</h3>
+                                <address>
+                                    <abbr title="Instituto Técnico de Barueri">ITB</abbr> - Moacyr Domingues Sávio Veronezi</abbr>
+                                </address>
+                                <time>12/2017</time>
+                            </li>
+                        </ol>
+                    </p>
+                </section>
+                <section id="experiecia" class="section-cv">
+                    <h2 class="subtitle-cv">Experiêcias</h2>
+                    <form>
+                        <ol id="containerExperience">
+                            <li id="itemExperience0" class="item-Experiencia-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="experience[0][name]" required maxlength="20" class="input-form-cv" placeholder="Fundação Instituto de Educação de Barueri">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="experience[0][date][b][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="experience[0][date][b][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999"> até
+                                        <input type="number" name="experience[0][date][e][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="experience[0][date][e][month]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="experience[0][office]" required maxlength="20" class="input-form-cv" placeholder="Técnico de Manutenção">
+                                    </p>
+                                    <p>
+                                        <textarea name="experience[0][summary]" cols="30" rows="10" placeholder="Uma breve descrição sobre suas atividades de resultados"></textarea>
+                                    </p>
+                                </div>
+                    </form>
+                    <p style="display:none">
+                        <ol style="display:none">
+                            <li>
+                                <h3>Médio Técnico em manutenção e suporte para informática</h3>
+                                <address>
+                                    <abbr title="Instituto Técnico de Barueri">ITB</abbr> - Moacyr Domingues Sávio Veronezi</abbr>
+                                </address>
+                                <time>12/2017</time>
+                            </li>
+                        </ol>
+                    </p>
+                </section>
+                <section id="curso" class="section-cv">
+                    <h2 class="subtitle-cv">Cursos</h2>
+                    <form>
+                        <input type="hidden" name="section" value="curse">
+                        <ol id="containerCurse">
+                            <li id="itemCurse0" class="item-Curse-cv">
+                                <div>
+                                    <p>
+                                        <input type="text" name="[0][name]" required maxlength="20" class="input-form-cv" placeholder="IT Essential">
+                                    </p>
+                                    <p>
+                                        <input type="text" name="[0][institute]" required maxlength="20" class="input-form-cv" placeholder="Nome da instituição">
+                                    </p>
+                                    <p>
+                                        <input type="number" name="[0][done][month]" required min="01" max="12" class="input-form-cv" placeholder="99">/
+                                        <input type="number" name="[0][done][year]" required min="1900" max="2018" class="input-form-cv" placeholder="9999">
+                                    </p>
+                                </div>
+
+                    </form>
+                </section>
+            </div>
+        </article>
+        <script>
+            function newLink(id, tl) {
+                let item = document.createElement('li');
+                let link = document.createElement('a');
+                link.setAttribute('href', `#${id}`);
+                link.setAttribute('onclick', 'smoothScroll(event)');
+                link.innerText = tl;
+                item.appendChild(link);
+                return item;
+            }
+            function newSection(id, tl, ht) {
+                let section = document.createElement('section');
+                let title = document.createElement('h2');
+                title.classList.add('subtitle-cv');
+                title.innerText = tl;
+                section.classList.add('section-cv');
+                section.setAttribute('id', id);
+                section.appendChild(title);
+                section.innerHTML += ht;
+                return section;
+            }
+            function makeSection(id, tl, ht) {
+                let r = [];
+                r.push(newSection(id, tl, ht))
+                r.push(newLink(id, tl));
+
+                return r;
+            }
+
+            function fe(input) {
+                input.forEach(function (v, i) {
+                    console.log(`${i}:${v}`);
+                })
+            }
+            console.log(makeSection());
+        </script>
+    </main>
+    <script src="script/curriculo/componente/main-section.js"></script>
+</body>
+
+</html>
