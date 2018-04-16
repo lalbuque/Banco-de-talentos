@@ -55,9 +55,7 @@
 .link-nav-header>li:hover{
     background-color: rgb(104, 104, 104);
 }
-.active-navli-header{
-    border-color: #61dafb !important;
-}
+
 .content-brand-header{
     font-size: 30px;
     color: rgb(255,255,255);
