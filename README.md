@@ -1,5 +1,5 @@
 # Projeto Banco de Talentos
-Link: <a href="https://wesleybu.github.io/banco-de-talentos/">clique aqui</a>
+Link: <a href="https://lalbuque.github.io/banco-de-talentos/">clique aqui</a>
 
 ---------------------------------------------------------------------------------
 ## Diretórios:
