@@ -48,8 +48,12 @@
             <figure class="profile-image-curriculo">
                 <img src="image/user.png" class="image-curriculo">
                 <figcaption>
-                    <h1>
-                        <span>fulano de Tal</span>
+                        <form action="/action_page.php">
+                            <input class="button" type="file" name="pic" accept="image/*">
+                            <input class="button" type="submit">
+                          </form>
+                    <h1 id="name">
+                        <span >Gabriele Guedes</span>
                     </h1>
                 </figcaption>
             </figure>
@@ -71,7 +75,7 @@
 
         <article class="descri-part-curriculo">
             <div class="page-cv">
-                <h1 id="main" class="title-cv">curriculo</h1>
+                <h2 id="main" class="title-cv"><Cap>Currículo | Alterar Dados </Cap></h2>
                 <section class="section-cv">
                     <form id="main-section">
                         <input type="hidden" name="section" value="main">

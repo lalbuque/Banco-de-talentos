@@ -9,6 +9,10 @@
    
 }
 
+.name{
+	font-family: inherit;
+	margin-top: -1vh;
+}
 
 
 .pesquisa{
@@ -42,7 +46,7 @@
 	background-color:rgba(72,72,72,0.4);
 	padding:35px 35px 35px 35px;
     width: 348px;
-    
+    height: 111vh;
     margin-top:30px;
     -moz-border-radius: 7px;
     -webkit-border-radius: 7px;
@@ -124,7 +128,7 @@ input:focus, textarea:focus {
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
 	transition: all 0.3s;
-    margin-top:-4px;
+   
     font-weight: 700px;
 }
 

@@ -10,28 +10,41 @@
     <!-- CSS importantes -->
     <link rel="stylesheet" href="style/default.css">
     <link rel="stylesheet" href="style/static.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
     <!-- CSS da página -->
     <link rel="stylesheet" href="style/curriculo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- JS da página -->
     <script src="script/curriculo.js"></script>
 </head>
 
 <body>
     <!-- HEADER -->
-    <header class="header-main fix-header">
+    <header class="header-main">
         <div class="content-links-header">
             <a href="index.html" class="brand-header">
                 <span class="content-brand-header">OneJob</span>
             </a>
-            <nav class="navbar-header">
+            <nav class="navbar-header" id="fonte-login">
                 <ol class="link-nav-header">
                     <li class="active-navli-header">
                         <a href="index.html" class="a-nav-header">Home</a>
                     </li>
 
+                    <li class="active-navli-header">
+                        <a href="login.html" class="a-nav-header">Candidato</a>
+                    </li>
+                    <li>
+                        <a href="login-empresa.html" class="a-nav-header">Recrutador</a>
+                    </li>
+
                 </ol>
             </nav>
+        </div>
+        <div class="left-header">
+
+
         </div>
     </header>
     <!-- FIM DA HEADER -->
@@ -64,7 +77,17 @@
         <article class="descri-part-curriculo">
             <div class="page-cv">
                 <h1 id="main" class="title-cv">curriculo</h1>
+                <div class="botoes">
+                    <button type="submit" class="button-accept">
+                        <i class="fa fa-check" style="font-size:24px;color:green"></i>
+                    </button>
+                    <button type="submit" class="button-denied">
+                        <i class="fa fa-remove" style="font-size:24px;color:red"></i>
+                    </button>
+                </div>
+
                 <section class="section-cv">
+
                     <form id="main-section">
                         <input type="hidden" name="section" value="main">
                         <p>
@@ -73,7 +96,7 @@
                         </p>
                         <p>
                             Data de nascimento: 13/11/1997
-                    
+
                         </p>
                         <p>
                             Telefone: (11) 95202-6869
@@ -83,23 +106,23 @@
                         </p>
                         <p>
                             Site: https://www.linkedin.com/in/gabriele-guedes-265905130/
-                            
+
                         </p>
                         <div>
                             Outros links
                             <div class="other-links">
-                                <p>GitHub -  https://github.com/gabrielepgs </p>
-                                    
+                                <p>GitHub - https://github.com/gabrielepgs </p>
+
                     </form>
 
                 </section>
                 <section id="area-atuacao" class="section-cv">
                     <h2 class="subtitle-cv">Área de atuação</h2>
-                    
+
                     <form>
                         <p>
-                                Full Stack Developer
-                            
+                            Full Stack Developer
+
                         </p>
                     </form>
                 </section>
@@ -111,7 +134,7 @@
                             <li id="itemFormation0" class="item-formation-cv">
                                 <div>
                                     <p>
-                                       Gestão da Tecnologia da Informação
+                                        Gestão da Tecnologia da Informação
                                     </p>
                                     <p>
                                         FATEC Barueri - Faculdade de Tecnologia Padre Danilo José de Oliveira Ohl
@@ -121,7 +144,7 @@
                                     </p>
                                 </div>
                     </form>
-                    
+
                 </section>
                 <section id="experiecia" class="section-cv">
                     <h2 class="subtitle-cv">Experiêcias</h2>
@@ -130,7 +153,7 @@
                             <li id="itemExperience0" class="item-Experiencia-cv">
                                 <div>
                                     <p>
-                                            Microsoft Corporatio                                       
+                                        Microsoft Corporatio
                                     </p>
                                     <p>
                                         04/2018 - Atualmente
@@ -163,19 +186,19 @@
                             <li id="itemCurse0" class="item-Curse-cv">
                                 <div>
                                     <p>
-                                    IT Essential
+                                        IT Essential
                                     </p>
                                     <p>
-                                     FATEC Barueri 
+                                        FATEC Barueri
                                     </p>
                                     <p>
-                                       05/2017
+                                        05/2017
                                     </p>
                                 </div>
 
                     </form>
                 </section>
-            </div>
+                </div>
         </article>
         <script>
             function newLink(id, tl) {
